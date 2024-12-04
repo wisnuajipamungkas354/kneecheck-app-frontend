@@ -1,6 +1,7 @@
 import { Button, Card, Input } from "antd";
 import Meta from "antd/es/card/Meta";
 import LogoApp from "../../assets/logo.png";
+import { Link } from "react-router-dom";
 
 const LoginPage = () => {
   return (
@@ -17,7 +18,7 @@ const LoginPage = () => {
         <Input className="my-2" type="password" placeholder="Masukkan Password"></Input>
         <Button type="primary" className="w-full" typeof="submit">Login</Button>
         </form>
-        <p className="p-2 text-center">Belum punya akun? Klik <a href="">register disini!</a></p>
+        <p className="p-2 text-center">Belum punya akun? Klik <Link to={"/"}>register disini!</Link></p>
       </Card>
     </div>
   );
